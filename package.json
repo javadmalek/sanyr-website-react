@@ -1,0 +1,29 @@
+{
+  "name": "sanyr-com",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^3.2.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:server": "node server",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "mocha test"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^4.0.1",
+    "mz": "^2.7.0",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2"
+  }
+}

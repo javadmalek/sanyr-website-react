@@ -1,0 +1,87 @@
+
+/*---------------------------------------
+    QUOTE AREA
+-----------------------------------------*/
+.quote-area{
+}
+.quote-single{}
+.quote-main-content{
+    padding: 24px 20px 28px 50px;
+    background-color: #fff;
+    border-width: 0 1px 1px 1px;
+    border-color: #ebebeb;
+    border-style: solid;
+    -webkit-box-shadow: 0 2.3px 4px 0.1px #e8e8e8;
+    -moz-box-shadow: 0 2.3px 4px 0.1px #e8e8e8;
+    -ms-box-shadow: 0 2.3px 4px 0.1px #e8e8e8;
+    box-shadow: 0 2.3px 4px 0.1px #e8e8e8;
+    border-radius: 2px;
+    position: relative;
+}
+.quote-main-content:before{
+    content: "";
+    left: -2px;
+    bottom: -14px;
+    position: absolute;
+    width: 0;
+    height: 14px;
+    width: 15px;
+    background: url(quote-slider-icon.png)no-repeat center;
+}
+.quote-main-content p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #9b9b9b;
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.small-quote{
+    background-color: #282828;
+    border-radius: 0 2px 2px 0;
+    color: #fff;
+    font-size: 17px;
+    height: 64px;
+    left: 0;
+    line-height: 64px;
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    top: 30px;
+}
+.large-quote{
+    bottom: 20px;
+    color: #f1f1f1;
+    font-size: 70px;
+    position: absolute;
+    right: 30px;
+}
+.quote-author{
+    margin-top: 15px;
+    padding-left: 28px;
+}
+.quote-author img{
+    border-radius: 2px;
+    max-width: 50px;
+    float: left;
+}
+.quote-author-details h3{
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    line-height: 23px;
+    margin: 0;
+}
+.quote-author-details p{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 0;
+}
+.quote-author-details{
+    padding-left: 64px;
+    padding-top: 2px;
+    margin-bottom: 7px;
+}

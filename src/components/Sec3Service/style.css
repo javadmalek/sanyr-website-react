@@ -1,0 +1,193 @@
+/*---------------------------------------
+    SERVICE AREA
+-----------------------------------------*/
+.service-area{
+    padding-bottom: 70px;
+}
+.service-no-padding-btm{
+    padding-bottom: 0;
+}
+.service-content-area{}
+.service-content-single{}
+.service-content-img{
+    position: relative;
+}
+.service-content-img-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27,181,128,0);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.service-content-single:hover .service-content-img-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27,181,128,.7);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.service-content-img-layer-icon{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    margin-left: -10px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    opacity: 0;
+}
+.service-content-single:hover .service-content-img-layer-icon{
+    opacity: 1;
+}
+.service-content-img >img{
+    width: 100%;
+}
+.service-content-icon{
+    padding: 0px 20px 18px 0px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 70px;
+    z-index: 4;
+}
+.service-content-icon-details{
+    position: relative;
+    padding-left: 64px;
+}
+.service-content-icon-details span{
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+.service-content-icon-details span.icon{
+    font-size: 32px;
+    color: #282828;
+}
+.service-content-icon-details:before{
+    position: absolute;
+    content: "";
+    left: 47px;
+    top: 20px;
+    width: 2px;
+    height: 12px;
+    background: #cecece;
+}
+.service-content-icon-details:after{
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -18px;
+    width: 32px;
+    height: 2px;
+    background: #282828;
+}
+.service-content-icon-details h2{
+    font-size: 22px;
+    color: #222222;
+    font-weight: 600;
+}
+.service-content-icon-details p{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Droid Serif', serif;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.service-content-text{}
+.service-content-text p{
+    font-size: 14px;
+    color: #9b9b9b;
+    margin: 25px 0px;
+}
+.service-content-text a{}
+.read-more-btn {}
+.read-more-btn a{
+    display: inline-block;
+    padding: 12px 13px;
+    border: 2px solid #313131;
+    border-radius: 0;
+    color: #222;
+    font-size: 13px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: transparent;
+    letter-spacing: 0.02em;
+    -webkit-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.read-more-btn a i{
+    display: inline-block;
+    left: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    opacity: 0;
+    padding: 0px;
+    transition: all 300ms linear 0ms;
+    color: #222;
+}
+.read-more-btn a:hover {
+    background-color: rgb(27, 181, 128);
+    padding-left: 32px;
+    border-color: rgb(27, 181, 128);
+    color: #fff;
+}
+.read-more-btn a:hover i {
+    opacity: 1;
+    color: #fff;
+}
+
+.owl-theme .owl-controls .owl-nav {
+    text-align: center;
+}
+.owl-theme .owl-controls .owl-dots {
+    margin-top: 30px;
+    text-align: center;
+}
+.owl-theme .owl-controls .owl-dot.active span, .owl-theme .owl-controls .owl-dot:hover span {
+    background: #741000;
+}
+.owl-theme .owl-controls .owl-dot span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin: 0 3px;
+    background: #222;
+    position: relative;
+    -webkit-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.dots-with-bg .owl-controls .owl-dot span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin: 0 3px;
+    background: #fff;
+    position: relative;
+    -webkit-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+@media(max-width: 400px){
+    .service-content-icon{
+        right: 0px;
+    }
+}

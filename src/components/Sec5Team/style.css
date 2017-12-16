@@ -1,0 +1,183 @@
+/*---------------------------------------
+    BLOG AREA
+-----------------------------------------*/
+.blog-area{
+}
+.blog-content-area{}
+.blog-content-single{
+    background-color: #fff;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #eee;
+    padding: 0 30px 30px 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+    -ms-box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+    border-radius: 0 0 3px 3px;
+    -webkit-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.blog-img{
+    position: relative;
+    top:-30px;
+}
+.blog-img img{
+    width: 100%;
+}
+.blog-img i{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 49px;
+    background-color: #282828;
+    border-radius: 2px;
+    text-align: center;
+    bottom: 30px;
+    left: 30px;
+    opacity: 0;
+    -webkit-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.blog-text{}
+.blog-text ul{
+    margin: 0;
+    padding: 0;
+}
+.blog-text ul li{
+    display: inline-block;
+    padding-right: 4px;
+    color: #222;
+    position: relative;
+    font-size: 13px;
+}
+.blog-text ul li:after {
+    color: #d5d5d5;
+    content: "/";
+    padding-left: 10px;
+}
+.blog-text ul li:last-child:after {
+    display: none;
+}
+.blog-text ul li a{
+    color: #741000;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.blog-text ul li{}
+.blog-text h2{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 9px;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+    font-family: 'Droid Serif', serif;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+.blog-text h2 a{
+    color: #282828;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+}
+.blog-text h2 a:hover{
+    color: #741000;
+}
+.blog-text p{
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 23px;
+}
+
+.blog-text > a{
+    position: relative;
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.blog-text > a i{
+    padding-right: 5px;
+}
+.blog-text > a span{
+    opacity: 0;
+    -webkit-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.blog-text > a:before{
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    content: "";
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+    opacity: 0;
+}
+.blog-text > a:hover{
+    color: #741000;
+}
+.blog-text > a:hover:before{
+    background-color: #741000;
+}
+.blog-content-single:hover .blog-img i{
+    opacity: 1
+}
+.blog-content-single:hover .blog-text > a span{
+    opacity: 1;
+}
+.blog-content-single:hover .blog-text > a:before{
+    opacity: 1;
+}
+.blog-content-single-no-btm-padding{
+    padding-bottom: 10px;
+}
+.blog-explore a{
+    border-radius: 0;
+    color: #222;
+    font-size: 13px;
+    line-height: 1;
+    margin: 0;
+    padding: 17px 26px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: transparent;
+    letter-spacing: 0.02em;
+    -webkit-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.blog-explore a i{
+    padding-left: 10px;
+    padding-right: 6px;
+    -webkit-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+}
+.blog-explore a:hover{
+    color: #741000;
+}
+.blog-explore a:hover i{
+    color: #741000;
+}
