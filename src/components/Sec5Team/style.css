@@ -181,3 +181,91 @@
 .blog-explore a:hover i{
     color: #741000;
 }
+
+element.style {
+}
+
+/*---------------------------------------
+        PROGRESS BAR AREA
+-----------------------------------------*/
+.progress-bar-area{
+    padding: 40px 0px 80px;
+}
+.skill{
+    font-weight: 800;
+    color: #222;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.progress{
+    height: 5px;
+    background-color: #eeeeee;
+    margin-bottom: 25px;
+}
+
+.progress-bar{
+    background-color: #741000;
+    transition: width 4s;
+}
+.progress-bar-success{}
+.progress_cont{
+    width: 100%;
+    position: relative;
+}
+.progress_cont span{
+    color: #ccc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    z-index: 1;
+    font-weight: normal;
+}
+
+@media(max-width: 767px){
+    .feature-left{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-image: url(images/home-2-feature.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 200px 0px;
+    }
+    .feature-right {
+        padding: 40px 0px 100px 0px;
+    }
+}
+
+/*FEATURE BOTTOM AREA*/
+.feature-bottom-area{
+    background: #222222;
+}
+.feature-bottom-content{
+    padding: 20px 0px 20px 65px;
+    position: relative;
+}
+.feature-bottom-content i{
+    font-size: 35px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    color: #ffffff;
+}
+.feature-bottom-content h2{
+    font-size: 18px;
+    color: #f9f9f9;
+    font-weight: 600;
+}
+.feature-bottom-content p{
+    font-size: 14px;
+    color: #9b9b9b;
+}
+.feature-btm-b-right{
+    border-right: 1px solid #2b2b2b;
+}
+

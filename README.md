@@ -31,6 +31,21 @@ const Routes = (props) => (
 
 ```
 
+## INDEX-PAGE SECTIONS
+```
+            <div className={classnames('App', className)} {...props}>
+                <Header header={this.state.header}/>
+                <Home home={this.state.home}/>
+                <Service services={this.state.services}/>
+                <How how={this.state.how}/>
+                <Team teamMember={this.state.team_members}/>
+                <Testimonial testimonials={this.state.testimonials}/>
+                <Blog blogs={this.state.blogs}/>
+                <Consult/>
+                <Footer/>
+            </div>
+```
+
 ## Docker Settings
 1. Let’s create an image named sanyr-com:
 `docker build -t sanyr-com .`

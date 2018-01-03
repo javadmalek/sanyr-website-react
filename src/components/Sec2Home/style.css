@@ -397,3 +397,57 @@
 /*****************************************
         HOME PAGE 1
 ******************************************/
+
+.slid-headline {
+    z-index: 6;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 700;
+    color: #741000;
+    white-space: nowrap;
+}
+
+.slid-headline-sub-title {
+    z-index: 7;
+    white-space: nowrap;
+    margin: 30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #741000;
+}
+
+
+@media (max-width: 767px) {
+    .slid-headline {
+        margin-top: -20px;
+        margin-left: 20px;
+        width: 280px;
+        line-height: 100px;
+        text-align: left;
+        white-space: pre-wrap;
+        position: relative;
+        font-size: 80px;
+    }
+
+    .slid-headline-sub-title {
+        width: 280px;
+        line-height: 80px;
+        text-align: left;
+        margin-top: 40px;
+        white-space: pre-wrap;
+        position: relative;
+        font-size: 55px;
+    }
+
+    .main-title h2
+    {
+        font-size: 16px;
+    }
+    .main-title h3
+    {
+        font-size: 8px;
+    }
+}

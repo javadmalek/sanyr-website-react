@@ -85,3 +85,84 @@
     padding-top: 2px;
     margin-bottom: 7px;
 }
+/*---------------------------------------
+    QUOTE 3 AREA
+-----------------------------------------*/
+.quote-3-area{}
+.quote-3-single{
+    text-align: center;
+    position: relative;
+}
+.quote-3-slider{}
+#quote-3-slider{
+    position: relative;
+}
+#quote-3-slider:after{
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 100%;
+    background: #f9f9f9;
+    top: 0;
+    right: 0;
+}
+.quote-3-single{}
+.quote-3-single:before {
+    background-color: #e8e8e8;
+    height: 80px;
+    width: 2px;
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 10px;
+}
+.quote-3-main-content{
+    padding: 100px 40px 0px 10px;
+    background-color: transparent;
+    border-width: 0 0px 0px 0px;
+    border-color: transparent;
+    border-style: solid;
+    -webkit-box-shadow: 0 0px 0px 0px #e8e8e8;
+    -moz-box-shadow: 0 0px 0px 0px #e8e8e8;
+    -ms-box-shadow: 0 0px 0px 0px #e8e8e8;
+    box-shadow: 0 0px 0px 0px #e8e8e8;
+    border-radius: 0px;
+    position: relative;
+}
+.quote-3-main-content:before{
+    display: none;
+}
+.quote-3-main-content .small-quote {
+    background-color: transparent;
+    border-radius: 0 2px 2px 0;
+    color: #222222;
+    font-size: 28px;
+    height: 64px;
+    left: 50%;
+    margin-left: -15px;
+    line-height: 64px;
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    top: 30px;
+}
+.quote-3-main-content .large-quote {
+    color: #f1f1f1;
+    left: 50%;
+    font-size: 140px;
+    position: absolute;
+    top:8%;
+    right: auto;
+    margin-left: -65px;
+}
+.quote-3-main-content p{
+    color: #656565;
+}
+.quote-3-author .quote-author-details {
+    padding-left: 0px;
+    padding-top: 2px;
+    margin-bottom: 7px;
+}
+.quote-3-author{
+    padding-left: 0;
+}
