@@ -3,9 +3,6 @@ import classnames from 'classnames';
 
 import './style.css';
 import Member from './team-member';
-// import ebrahim_kargar from './ebrahim-kargar.png';
-// import javad_malek_shahkoohi from './javad-malek-shahkoohi.png';
-// import mohammad_ghazi_vakili from './mohammad-ghazi-vakili.png';
 
 export default class Team extends Component {
     constructor(props) {

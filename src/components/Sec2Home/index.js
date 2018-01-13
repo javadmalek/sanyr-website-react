@@ -3,10 +3,6 @@ import classnames from 'classnames';
 import HeaderItem from './header-item'
 
 import './style.css';
-import slid1 from './images/sanyr-slider1.jpg';
-import slid2 from './images/sanyr-slider2.jpg';
-import slid3 from './images/sanyr-slider3.jpg';
-
 export default class Home extends Component {
 
     constructor(props)
