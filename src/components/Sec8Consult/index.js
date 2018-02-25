@@ -4,6 +4,45 @@ import classnames from 'classnames';
 import './style.css';
 
 export default class Consult extends Component {
+    constructor(props) {
+        super();
+
+        this.handleSubmit = this.handleSubmit.bind(this);
+        Consult.resetForm = Consult.resetForm.bind(this);
+    }
+
+    handleSubmit(e) {
+        const Email = require('email').Email;
+        const txtbxName = document.getElementById('txtbxName').value;
+        const txtbxEmail = document.getElementById('txtbxEmail').value;
+        const txtbxCompany = document.getElementById('txtbxCompany').value;
+        const txtbxMsg = document.getElementById('txtbxMsg').value;
+        const myMsg = new Email(
+            {
+                from: "info@sanyr.com"
+                , to: "info@sanyr.com"
+                , subject: "Make an Appointment"
+                , body: "Name: " + txtbxName + "\r\n\r\n" +
+                "Email: " + txtbxEmail + "\r\n\r\n" +
+                "Company: " + txtbxCompany + "\r\n\r\n" +
+                // "Time: "+ date('Y/m/d H:i:s')+"\r\n\r\n" +
+                "Message: " + txtbxMsg + "\r\n"
+            });
+
+        myMsg.send(function (err) {
+            if (!err) {
+                alert("Message Sent. Your request is registered and our team would contact you soon.");
+                Consult.resetForm()
+            } else {
+                alert("Message failed to send.")
+            }
+        })
+    }
+
+    static resetForm() {
+        document.getElementById('contact-form').reset();
+    }
+
     render() {
         const {className, ...props} = this.props;
         return (
@@ -28,7 +67,7 @@ export default class Consult extends Component {
                             </div>
                             <div className="col-sm-7">
                                 <div className="contact-form-right">
-                                    <form method="post" action="email.php" id="form1">
+                                    <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
                                         <div className="row">
                                             <div className="col-sm-6">
                                                 <input type="text" id="txtbxName" name="txtbxName"
@@ -53,13 +92,14 @@ export default class Consult extends Component {
                                                 </select>
                                             </div>
                                             <div className="col-sm-12">
-                                  <textarea className="form-control" rows="3"
-                                            required
-                                            id="txtbxMsg" name="txtbxMsg"
-                                            placeholder="Let us know how we can help you"></textarea>
+                                                  <textarea className="form-control" rows="3"
+                                                            required
+                                                            id="txtbxMsg" name="txtbxMsg"
+                                                            placeholder="Let us know how we can help you"/>
                                             </div>
                                             <div className="col-sm-12 text-center">
-                                                <button type="submit" form="form1" value="Get Free Advise">Get Free
+                                                <button type="submit" form="contact-form" value="Get Free Advise">Get
+                                                    Free
                                                     Advise
                                                 </button>
                                             </div>
@@ -74,3 +114,4 @@ export default class Consult extends Component {
         );
     }
 }
+

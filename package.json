@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
+    "email": "^0.2.6",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
     "react": "^16.2.0",
