@@ -31,6 +31,9 @@
     font-family: 'Raleway', sans-serif;
     margin-top: 40px;
 }
+.main-title h2 {
+    font-size: 30px;
+}
 .form-left-address{
     font-size: 14px;
     color: #282828;

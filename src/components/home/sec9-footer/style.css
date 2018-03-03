@@ -1,8 +1,9 @@
 /*---------------------------------------
     FOOTER AREA
 -----------------------------------------*/
-.footer-area{
+.footer-area {
     background: #222222;
+    padding-top: 20px;
 }
 .footer-top-content{
     padding: 80px 0px 60px 0px;

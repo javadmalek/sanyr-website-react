@@ -1,6 +1,7 @@
 import React, {propsTypes, Component} from 'react';
 import classnames from 'classnames';
 
+// import 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css';
 import './style.css';
 import Header from '../sec1-heade'
 import Home from '../sec2-home'

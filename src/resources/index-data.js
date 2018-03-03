@@ -69,25 +69,25 @@ export default {
         rightCardSteps: [
             {
                 className: 'expert-right-single-content e-r-s-padding-btm e-r-s-right-padding',
-                icon: 'fa fa-lightbulb-o fa-3x',
+                icon: 'far fa-lightbulb fa-2x',
                 title: 'Product Requirement Specifications',
                 description: 'By PRS document we would have a description of the product and extracting all its the functional and non-functional requirements.'
             },
             {
                 className: 'expert-right-single-content e-r-s-padding-btm e-r-s-border e-r-s-left-padding',
-                icon: 'fa fa-product-hunt',
+                icon: 'fab fa-product-hunt fa-2x',
                 title: 'Product Design',
                 description: 'Here we follow three objectives understanding the current model, designing desire architecture and deploying an MVP.'
             },
             {
                 className: 'expert-right-single-content e-r-s-padding e-r-s-right-padding',
-                icon: 'fa fa-cogs',
+                icon: 'fas fa-cogs fa-2x',
                 title: 'Implementation',
                 description: 'Starting to develop the product based on the desire design and specified technologies. Using Agile methodologies for production development.'
             },
             {
                 className: 'expert-right-single-content e-r-s-padding e-r-s-left-padding e-r-s-border',
-                icon: 'fa fa-check-square-o',
+                icon: 'far fa-check-square fa-2x',
                 title: 'Verification and Delivery',
                 description: 'Before moving to the Deliver phase, the Process Verification and the Design Verification Test performed on pre-production or production units.'
             },

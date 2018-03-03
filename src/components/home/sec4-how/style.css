@@ -72,16 +72,11 @@
     padding: 50px 0px;
 }
 .expertise-area-details{
-    background-color: #fff;
-    -webkit-box-shadow: 0 2.3px 2px 0.1px #f1f1f1;
-    -moz-box-shadow: 0 2.3px 2px 0.1px #f1f1f1;
-    -ms-box-shadow: 0 2.3px 2px 0.1px #f1f1f1;
-    box-shadow: 0 2.3px 2px 0.1px #f1f1f1;
 }
 .expert-left-layer{
     position: relative;
     padding: 50px;
-    /*background: url(home-1-left-img.png);*/
+    background: url(images/home-1-left-img.png);
     background-position: center center;
     background-size: cover;
 }
