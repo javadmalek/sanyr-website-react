@@ -1,0 +1,27 @@
+.section {
+    padding: 0 3rem;
+}
+.navbar-item img{
+    max-height: 2.75rem;
+}
+
+.image > .img{
+    border-radius: 5px;
+}
+
+.action-box{
+    text-align: justify;
+    padding: 16px;
+}
+
+/*
+.bg-orange{
+    background: #FFA500;
+}
+
+.navbar-item {
+    color: #ffffff;
+}
+.a:hover{
+    color: #c3c3c3;
+}*/

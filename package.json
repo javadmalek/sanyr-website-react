@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bulma": "^0.6.2",
     "classnames": "^2.2.5",
-    "email": "^0.2.6",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^3.2.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "sendmail": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

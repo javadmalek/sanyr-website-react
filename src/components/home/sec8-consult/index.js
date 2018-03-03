@@ -12,11 +12,12 @@ export default class Consult extends Component {
     }
 
     handleSubmit(e) {
-        const Email = require('email').Email;
         const txtbxName = document.getElementById('txtbxName').value;
         const txtbxEmail = document.getElementById('txtbxEmail').value;
         const txtbxCompany = document.getElementById('txtbxCompany').value;
         const txtbxMsg = document.getElementById('txtbxMsg').value;
+
+        /*const Email = require('email').Email;
         const myMsg = new Email(
             {
                 from: "info@sanyr.com"
@@ -28,7 +29,6 @@ export default class Consult extends Component {
                 // "Time: "+ date('Y/m/d H:i:s')+"\r\n\r\n" +
                 "Message: " + txtbxMsg + "\r\n"
             });
-
         myMsg.send(function (err) {
             if (!err) {
                 alert("Message Sent. Your request is registered and our team would contact you soon.");
@@ -36,7 +36,20 @@ export default class Consult extends Component {
             } else {
                 alert("Message failed to send.")
             }
-        })
+        });*/
+
+       /* const sendmail = require('sendmail')();
+
+        sendmail({
+            from: 'info@sanyr.com',
+            to: 'info@sanyr.com',
+            replyTo: 'info@sanyr.com',
+            subject: 'MailComposer sendmail',
+            html: 'Mail of test sendmail '
+        }, function (err, reply) {
+            console.log(err && err.stack)
+            console.dir(reply)
+        })*/
     }
 
     static resetForm() {

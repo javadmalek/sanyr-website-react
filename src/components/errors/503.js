@@ -3,15 +3,15 @@ import classnames from 'classnames';
 
 import './style.css';
 
-export default class NotFound extends Component {
+export default class Error503 extends Component {
 
     render() {
         const {className, ...props} = this.props;
         return (
             <div className={classnames('NotFound', className)} {...props}>
                 <h1>
-                    404
-                    <small>Not Found :(</small>
+                    503
+                    <small>Service Unavailable :(</small>
                 </h1>
             </div>
         );

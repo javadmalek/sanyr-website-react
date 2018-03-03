@@ -2,17 +2,17 @@ import React, {propsTypes, Component} from 'react';
 import classnames from 'classnames';
 
 import './style.css';
-import Header from '../Sec1Header'
-import Home from '../Sec2Home'
-import Service from '../Sec3Service'
-import How from '../Sec4How'
-import Team from '../Sec5Team'
-import Testimonial from '../Sec6Testimonial'
-import Blog from '../Sec7Blog'
-import Consult from '../Sec8Consult'
-import Footer from '../Sec9Footer'
+import Header from '../sec1-heade'
+import Home from '../sec2-home'
+import Service from '../sec3-service'
+import How from '../sec4-how'
+import Team from '../sec5-team'
+import Testimonial from '../sec6-testimonial'
+import Blog from '../sec7-blog'
+import Consult from '../sec8-consult'
+import Footer from '../sec9-footer'
 
-import indexData from '../../resources/index-data'
+import indexData from '../../../resources/index-data'
 
 class App extends Component {
     constructor(props) {

@@ -1,0 +1,30 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+a:hover, a:focus {
+  box-shadow: 0 0px transparent;
+  text-decoration: none;
+  color: inherit;
+}
+.background-type{
+  background: #f9f9f9;
+}
+.no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+.no-padding-left{
+  padding-left: 0;
+}
+.no-padding-right{
+  padding-right: 0;
+}
+.bg-type-2{
+  background: #f9f9f9;
+}
+.no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+

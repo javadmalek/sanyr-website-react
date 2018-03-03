@@ -18,7 +18,6 @@ export default class Header extends Component {
 
     render() {
         const {className, header, ...props} = this.props;
-        console.log(header);
         return (
             <div className={classnames('Header', className)} {...props}>
                 <div className="outslider_loading">
