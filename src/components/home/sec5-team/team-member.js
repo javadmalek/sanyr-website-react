@@ -30,7 +30,7 @@ export default class Member extends Component {
     renderSocial(key) {
         const social = this.props.profile.socials[key];
         return (
-            <li><a href={social.link}><i className={`fa fa-${social.media}`}></i></a></li>
+            <li><a href={social.link}><i className={`fab fa-${social.media}`}/></a></li>
         );
     }
 

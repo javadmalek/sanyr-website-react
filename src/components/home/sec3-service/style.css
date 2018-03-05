@@ -271,3 +271,11 @@
     margin: 24px;
     text-align: justify;
 }
+
+.svg-inline--fa{
+    height: auto;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 0.8em;
+}

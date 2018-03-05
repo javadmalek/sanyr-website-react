@@ -16,23 +16,21 @@ export default {
                 classid: 'slide-1-layer-2',
                 image: './images/sanyr-slider1.jpg',
                 title: 'We build Software products for Humans.',
-                subtitle: 'SanyR helps your company create a\n competitive advantage with high-quality software delivered on demand.'
+                subtitle: 'SanyR helps your company create a competitive advantage with high-quality software delivered on demand.'
             },
             {
                 index: 'rs-2',
                 classid: 'slide-2-layer-2',
                 image: './images/sanyr-slider2.jpg',
-                title: 'We guide you across your journey to Industry 4.0.',
-                subtitle: 'SanyR experts pave the way for your\n industry to transform into a digital factory!'
+                title: 'We guide you across your journey to Industry 4.0',
+                subtitle: 'SanyR experts pave the way for your industry to transform into a digital factory and smart factory'
             },
             {
                 index: 'rs-3',
                 classid: 'slide-3-layer-2',
                 image: './images/sanyr-slider3.jpg',
                 title: 'Artificial Intelligence Powered all Industries.',
-                subtitle: 'We help you discover Capabilities,\n' +
-                'Recognize Patterns, Build and Validate your Learning model Implement and Deploy\n' +
-                'your AI applications.'
+                subtitle: 'We help you discover Capabilities Recognize Patterns, Build and Validate your Learning model on your AI applications.'
             }
         ]
     },
@@ -45,7 +43,7 @@ export default {
             'ensure the use of best-fit software solutions to meet your customers’ business needs.'
         },
         {
-            icon: 'fa fa-cubes',
+            icon: 'fa fa-cubes fa-2x',
             title: 'Artificial Intelligence',
             description: 'AI’s impact on industries is similar to electricity’s impact on humankind. At SanyR, we\n' +
             'are zealously committed to combining our domain knowledge with specialized technical\n' +
@@ -53,7 +51,7 @@ export default {
             'with their added value.'
         },
         {
-            icon: 'fa fa-industry',
+            icon: 'fa fa-industry fa-2x',
             title: 'Industry 4.0',
             description: 'Digitization of the factory is badly disruptive, changing all aspects of your industry.' +
             'Its impact ranges from smart manufacturing and lean production to industrial automation. ' +

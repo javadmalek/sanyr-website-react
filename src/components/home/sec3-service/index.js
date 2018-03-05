@@ -17,11 +17,11 @@ export default class Service extends Component {
         const service = this.props.services[key];
         return (
             <div className="service-3-content-single text-center">
-                <span className="icon"><i className={ service.icon } aria-hidden="true"></i></span>
+                <span className="icon"><i className={service.icon} aria-hidden="true"/></span>
                 <h2><a href="#">{ service.title }</a></h2>
                 <p>{ service.description }</p>
                 <div className="service-content-text read-more-btn">
-                    <a href="#"><i className="fa fa-long-arrow-right"></i> <span>Learn More</span></a>
+                    <a href="#"><i className="fas fa-long-arrow-alt-right"/> <span>Learn More</span></a>
                 </div>
             </div>
 

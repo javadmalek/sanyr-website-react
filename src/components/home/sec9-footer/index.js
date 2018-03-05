@@ -57,9 +57,9 @@ export default class Footer extends Component {
                                 <div className="col-sm-4 col-md-4  no-padding-right">
                                     <div className="footer-bottom-single">
                                         <ul className="footer-social text-right">
-                                            <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i className="fab fa-facebook"/></a></li>
+                                            <li><a href="#"><i className="fab fa-twitter"/></a></li>
+                                            <li><a href="#"><i className="fab fa-linkedin"/></a></li>
                                         </ul>
                                     </div>
                                 </div>

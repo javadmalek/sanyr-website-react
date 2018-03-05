@@ -25,7 +25,7 @@ export default class BlogItem extends Component{
                         <h2><a href="#">{ details.title }</a></h2>
                         <p style={{ textAlign: 'justify'}} >{ details.description }</p>
 
-                        <a href="#"><i className="fa fa-long-arrow-right"></i> <span>Read More</span></a>
+                        <a href="#"><i className="fas fa-long-arrow-alt-right"/> <span>Read More</span></a>
                     </div>
                 </div>
             </div>
