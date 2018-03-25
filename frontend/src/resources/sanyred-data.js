@@ -14,7 +14,10 @@ export default {
                         'nunc dui porta orci, quis semper odio felis ut quam.',
             btnReq:'Request & Demo',
             btnSignup: 'Sign Up',
-            alt: 'SANYRED IIOT PRODUCT FOR INDUSTRY'
+            alt: 'SANYRED IIOT PRODUCT FOR INDUSTRY',
+            regInfo: {
+                title: 'Sign Up'
+            }
         }
     },
     howWork: {

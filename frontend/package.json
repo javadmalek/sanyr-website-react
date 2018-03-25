@@ -14,7 +14,6 @@
     "react-scripts": "1.0.17",
     "sendmail": "1.2.0"
   },
-  "proxy": "http://localhost:9000/",
   "scripts": {
     "start": "react-scripts start",
     "start:server": "node server",
@@ -24,7 +23,11 @@
   },
   "devDependencies": {
     "chai": "4.1.2",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-config-google": "0.9.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
     "mocha": "4.0.1",
     "mz": "2.7.0",
     "supertest": "3.0.0",

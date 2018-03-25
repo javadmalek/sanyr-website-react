@@ -1,15 +1,15 @@
-'use strict';
+require('dotenv').config();
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const mongoose = require('mongoose');
+const passport = require('passport');
+const config = require('./config/database');
 
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var morgan = require('morgan');
-var mongoose = require('mongoose');
-var passport = require('passport');
-var config = require('./config/database');
 
 mongoose.connect(config.database);
 const app = express();
@@ -18,14 +18,14 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
 });
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -34,30 +34,33 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'));
 app.use(passport.initialize());
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
     res.send('Page under construction.');
 });
 
 // ************* ROUTING *************
-const apiUsers = require('./routes/users');
+const apiUsers = require('./routes/users');     // eslint-disable-line import/newline-after-import
 app.use('/api/users', apiUsers);
 
-const apiSanyrRouter = require('./routes/sanyr_router');
-app.use('/api/sanyr/', apiSanyrRouter);
+const apiSanyrRouter = require('./routes/sanyr_router');    // eslint-disable-line import/newline-after-import
+app.use('/api/sanyr', apiSanyrRouter);
 
-app.use('*', function(req, res) {
+const apiSanyRedRouter = require('./routes/sanyred_router');    // eslint-disable-line import/newline-after-import
+app.use('/api/sanyred', apiSanyRedRouter);
+
+app.use('*', (req, res) => {
     res.send('not found!');
 });
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
     const err = new Error('Not Found');
     err.status = 404;
     next(err);
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use((err, req, res, next) => {
     // set locals, only providing error in development
     res.locals.message = err.message;
     res.locals.error = req.app.get('env') === 'development' ? err : {};

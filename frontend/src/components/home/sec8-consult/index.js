@@ -1,19 +1,20 @@
-import React, {PropTypes, Component} from 'react';
+import React, { PropTypes, Component } from 'react';
 import axios from 'axios';
 import classnames from 'classnames';
 
 import './style.css';
+import  HelperFunctions from '../../../helper-functions';
 
 export default class Consult extends Component {
     constructor(props) {
         super();
 
         this.state = {
-            txtbxName: null,
-            txtbxEmail: null,
+            txtbxName:    null,
+            txtbxEmail:   null,
             cmbxSolution: 'software',
             txtbxCompany: null,
-            txtbxMsg: null,
+            txtbxMsg:     null,
         };
 
         this.onChange = this.onChange.bind(this);
@@ -21,7 +22,7 @@ export default class Consult extends Component {
     }
 
     onChange(e) {
-        const state = this.state
+        const state = this.state;
         state[e.target.name] = e.target.value;
         this.setState(state);
     }
@@ -33,38 +34,37 @@ export default class Consult extends Component {
             txtbxEmail,
             cmbxSolution,
             txtbxCompany,
-            txtbxMsg
+            txtbxMsg,
         } = this.state;
 
-        axios.post('http://localhost:9000/api/sanyr/send-consult', {
-            name: txtbxName,
-            email: txtbxEmail,
+        // ToDo: check the validation
+        axios.post(HelperFunctions.API_URL_SANYR + '/send-consult', {
+            name:     txtbxName,
+            email:    txtbxEmail,
             solution: cmbxSolution,
-            company: txtbxCompany,
-            message: txtbxMsg
+            company:  txtbxCompany,
+            message:  txtbxMsg,
         })
-            .then(function (response) {
+            .then((response) => {
                 if(response.data.success) {
+                    // ToDo: jqury is not allowded to be here , change to ReactDom soon.
                     alert('Thanks, Your message is sent.');
-
-                    document.getElementById("contact-form").reset();
-                }
-                else
-                    alert(response.data.msg);
+                    document.getElementById('contact-form').reset();
+                } else { alert(response.data.msg); }
 
             })
-            .catch(function (error) {
+            .catch((error) => {
                 alert(error.msg);
             });
     }
 
 
     render() {
-        const {className, ...props} = this.props;
+        const { className, ...props } = this.props;
         return (
             <section id="CONSULT"
-                     className={classnames('form-area page parallax-window')} {...props}
-                     data-parallax="scroll" data-image-src="form-bg.jpg">
+                className={classnames('form-area page parallax-window')} {...props}
+                data-parallax="scroll" data-image-src="form-bg.jpg">
                 <div className="contact-form">
                     <div className="container form-bg">
                         <div className="row">
@@ -76,7 +76,8 @@ export default class Consult extends Component {
                                             <h2>Free Consultation!</h2>
                                             <p>Let us give you a piece of advice on how to turn your idea into a
                                                 technology
-                                                product/service Quickly and efficiently.</p>
+                                                product/service Quickly and efficiently.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -87,36 +88,36 @@ export default class Consult extends Component {
                                         <div className="row">
                                             <div className="col-sm-6">
                                                 <input type="text" id="txtbxName" name="txtbxName"
-                                                       className="form-control"
-                                                       onChange={this.onChange}
-                                                       placeholder="Give Us a Name" required/>
+                                                    className="form-control"
+                                                    onChange={this.onChange}
+                                                    placeholder="Give Us a Name" required />
                                             </div>
                                             <div className="col-sm-6">
                                                 <input type="email" id="txtbxEmail" name="txtbxEmail"
-                                                       className="form-control"
-                                                       onChange={this.onChange}
-                                                       placeholder="Email: you@yourcompany.com" required/>
+                                                    className="form-control"
+                                                    onChange={this.onChange}
+                                                    placeholder="Email: you@yourcompany.com" required />
                                             </div>
                                             <div className="col-sm-6">
                                                 <input type="text" id="txtbxCompany" name="txtbxCompany"
-                                                       onChange={this.onChange}
-                                                       className="form-control"
-                                                       placeholder="Company Name"/>
+                                                    onChange={this.onChange}
+                                                    className="form-control"
+                                                    placeholder="Company Name" />
                                             </div>
                                             <div className="col-sm-6">
                                                 <select className="form-control" id="cmbxSolution" name="cmbxSolution"
-                                                        onChange={this.onChange}>
+                                                    onChange={this.onChange}>
                                                     <option value="software">Software Solutions</option>
                                                     <option value="ai">Artificial Intelligence</option>
                                                     <option value="iot">Industry 4.0</option>
                                                 </select>
                                             </div>
                                             <div className="col-sm-12">
-                                                  <textarea className="form-control" rows="3"
-                                                            required
-                                                            id="txtbxMsg" name="txtbxMsg"
-                                                            onChange={this.onChange}
-                                                            placeholder="Let us know how we can help you"/>
+                                                <textarea className="form-control" rows="3"
+                                                    required
+                                                    id="txtbxMsg" name="txtbxMsg"
+                                                    onChange={this.onChange}
+                                                    placeholder="Let us know how we can help you" />
                                             </div>
                                             <div className="col-sm-12 text-center">
                                                 <button type="submit" form="contact-form" value="Get Free Advise">Get
